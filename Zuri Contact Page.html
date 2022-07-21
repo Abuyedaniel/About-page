@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>Login Page</title>
+  <title>Contact Page</title>
 </head>
 
 <style>
@@ -32,6 +32,7 @@
     background-color: rgb(196, 220, 255);
   }
 </style>
+  
 <body>
    <header>
     <div class="topnav">
@@ -41,19 +42,28 @@
       <a href="Zuri Login Page.html">Login</a>
     </div>
   </header>
-  <br><br>
-  <form action="#" align="center">
+  <br>
+  <form action="#">
+    <div>
+      <label for="Fname">First Name</label>
+      <input type="text" name="fname" id="fname" maxlength="8" minlength="4" required>
+    </div>
+    <br>
+    <div>
+      <label for="Lname">Last Name</label>
+      <input type="text" name="lname" id="lname" maxlength="8" minlength="4" required>
+    </div>
+    <br>
     <div>
       <label for="email">Email</label>
       <input type="email" name="email" id="email" required>
     </div>
     <br>
     <div>
-      <label for="pword">Password</label>
-      <input type="password" name="pword" id="pword" required>
+      <textarea id="message" name="message" placeholder="Message..." style="height:50px"></textarea>
     </div>
-    <br>
-    <input type="submit" value="Sign in" id="sign in">
+    <br><br>
+    <input type="submit" value="Submit" id="submit">
   </form>
 </body>
 
